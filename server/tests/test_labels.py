@@ -80,11 +80,50 @@ ClassifyMultiple_tweet_dict = {
     ]}
 class TestLabels(TestCase):
 
-    def test_ClassifySingleTweet(self):
+
+    def test_ClassifyJoyTweet(self):
         # Assert
         for tweet in ClassifySingle_tweet_dict:
-            self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+            if tweet['label']== "joy":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+    
+    def test_ClassifySadTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "sadness":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
 
+
+    def test_ClassifyNeutralTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "neutral":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+
+    def test_ClassifyFearTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "fear":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+
+
+    def test_ClassifyAngerTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "anger":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+
+    def test_ClassifySurpriseTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "surprise":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
+
+    def test_ClassifyDisgustTweet(self):
+        # Assert
+        for tweet in ClassifySingle_tweet_dict:
+            if tweet['label']== "disgust":
+                self.assertEquals(classify_tweet(tweet['text']),tweet['label'])
 
     def test_ClassiftMultipleTweets(self):
         self.assertEquals(classify_tweets(ClassifyMultiple_tweet_dict['texts']),ClassifyMultiple_tweet_dict['labels'])

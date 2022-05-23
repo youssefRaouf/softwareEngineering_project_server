@@ -11,10 +11,8 @@ class TestRunTime(SimpleTestCase):
 
         # Choose Random tweet
         rand = random.randint(0, len(ClassifySingle_tweet_dict)-1);
-        print(rand);
         # Tweet
         tweet = ClassifySingle_tweet_dict[rand]['text'];
-        print(tweet);
         # Start timer
         start_time = time.time()
         #Classify
