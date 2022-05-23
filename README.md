@@ -5,7 +5,7 @@
 ### more methods to install it [https://docs.djangoproject.com/en/4.0/intro/install/]
 
 ### running the project
-#### `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
+#### `pip install -r requirements.txt` or `pip3 install -r requirements.txt` to install the required packages
 #### `python manage.py runserver` or `python3 manage.py runserver`
 
 ### running tests
