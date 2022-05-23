@@ -1,3 +1,6 @@
+# machine learning model
+### you should download the model from this link https://drive.google.com/file/d/1iHc2xvnpfdFE55SDb5WK7F_-ob1QuuAb/view?usp=sharing
+### put it in the project directory under a folder named `saved_models`
 # Django server
 ### You have to run python 3+ and pip on your machine
 ### You have to install django framework
